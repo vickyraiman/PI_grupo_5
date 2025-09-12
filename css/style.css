@@ -1,0 +1,23 @@
+.header1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo img {
+    height: 120px;  
+    width: auto;    
+    display: block; 
+  }
+
+.menu a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+.busqueda input{
+    padding: 5px;
+}
