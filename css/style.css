@@ -77,10 +77,12 @@ body {
 .sidebar {
     display: flex;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .sidebar aside {
     width: 220px;
+    flex: 0 0 220px;
 }
 
 .contenido {
@@ -136,6 +138,11 @@ body {
     color: white;
     height: 30px;
     width: 95px;
+}
+
+.vermas a{
+  text-decoration: none;
+  color: white;
 }
 
 .enviar{
@@ -313,3 +320,54 @@ body{
 }
 
 /* COMENTARIO TINI - PREGUNTARLE A BRIAN */
+
+/* CSS PRODUCT */
+
+.maincol{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+}
+
+
+.infoAuriculares{
+  display:flex;
+  align-items:flex-start;
+  gap:20px;
+  border:3px solid black;
+  padding:16px;
+}
+
+.infoAuriculares h3{
+  font-size: small;
+  font-weight: normal;
+}
+
+.infoAuriculares img{ 
+  max-width:300px; 
+  height:auto; 
+}
+
+.detalles{ 
+  max-width:600px; 
+  margin-left:0; 
+}
+
+
+.opiniones{ 
+  display:block; 
+  margin-top:0; 
+}
+
+.reviews{
+  border:1px solid #ccc;
+  border-radius:8px;
+  padding:12px;
+  background:#f7f9ff;
+  margin-bottom:12px;
+}
+
+.reviews h3{
+  color: goldenrod;
+}
