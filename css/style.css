@@ -5,7 +5,7 @@ body {
     background-color: #C1E1FF;
 }
 
-/* Estilos para el header (home) */
+/* CSS Header */
 .header1 {
     display: flex;
     align-items: center;
@@ -15,16 +15,15 @@ body {
 }
 
 .logo img {
-    height: 80px;
-    width: auto;
-    display: block;
-    border-radius:999px;                 /* como el círculo del mockup */ 
+    height: 41px;
+    width: 130px;
+    display: block;               
 }
 
 .menu {
   display: flex;
-  gap: 24px;          /* espacio entre enlaces */
-  margin-left: 40px;  /* separa un poco del logo */
+  gap: 24px;         
+  margin-left: 40px;  
 }
 .menu a {
   text-decoration: none;
@@ -46,14 +45,14 @@ body {
   gap: 8px;
 }
 .busqueda input {
-  width: 250px;               /* ancho fijo y proporcionado */
-  padding: 10px 12px;         /* altura cómoda */
+  width: 250px;            
+  padding: 10px 12px;        
   border: 2px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
 }
 .busqueda .enviar {
-  padding: 7px 18px;         /* misma altura que input */
+  padding: 7px 18px;        
   border: none;
   border-radius: 8px;
   background: #ff9196;
@@ -64,16 +63,13 @@ body {
 }
 
 .carrito img{
-  width:38px;                          /* tamaño similar al mockup */
+  width:38px;                         
   height:auto;
   display:block;
-  opacity:.8;                          /* si tu icono ya es rosa, queda sutil */
+  opacity:.8;                          
 }
 
-
-
-
-/* Estilos para el main (home) */
+/* CSS Home */
 .sidebar {
     display: flex;
     align-items: flex-start;
@@ -94,19 +90,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* reparte espacio */
 }
 
 .cards .art {
     width: 19%;
-    /* 5 columnas aprox */
     background: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    /* espacio entre filas */
 }
 
 .cards .art img {
@@ -127,7 +120,6 @@ body {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    /* apila verticalmente */
     gap: 32px;
 }
 
@@ -158,8 +150,7 @@ hr {
     color: black;
 }
 
-
-/* Aside (categorias de la home) */
+/* CSS Aside*/
 
 .categorias a{
   display: block;
@@ -205,9 +196,8 @@ body{
 }
 
 .logo{
-  height: 80px;
-  width: auto;
-  border-radius: 999px;
+  height: 41px;
+  width: 130px;
   margin-right: 30px;
 }
 
@@ -287,9 +277,8 @@ body{
 }
 
 .logo{
-  height: 80px;
-  width: auto;
-  border-radius: 999px;
+  height: 41px;
+  width: 130px;
   margin-right: 30px;
 }
 
@@ -337,6 +326,7 @@ body{
   gap:20px;
   border:3px solid black;
   padding:16px;
+  border-radius: 8px;
 }
 
 .infoAuriculares h3{
@@ -362,7 +352,7 @@ body{
 
 .reviews{
   border:1px solid #ccc;
-  border-radius:8px;
+  border-radius: 8px;
   padding:12px;
   background:#f7f9ff;
   margin-bottom:12px;
@@ -370,4 +360,13 @@ body{
 
 .reviews h3{
   color: goldenrod;
+}
+
+
+/* CSS FOOTER */
+footer{
+  background-color: #f7f9ff;
+  text-align: center;
+  padding: 20px 24px;
+  margin-top: 40px;
 }
