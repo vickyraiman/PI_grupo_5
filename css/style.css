@@ -22,8 +22,16 @@ body {
 
 .menu {
   display: flex;
-  gap: 24px;         
+      
   margin-left: 40px;  
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.menu ul li{
+  margin: 0 20px;
 }
 .menu a {
   text-decoration: none;
@@ -35,7 +43,7 @@ body {
 .actions{
   display:flex;
   align-items:center;
-  gap:16px;
+  margin: 0 26px;
 }
 
 /* Buscador */
@@ -73,7 +81,7 @@ body {
 .sidebar {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    margin-left: 20px;
 }
 
 .sidebar aside {
@@ -82,7 +90,6 @@ body {
 }
 
 .contenido {
-    flex: 1;
     padding: 0 20px;
 }
 
@@ -116,7 +123,6 @@ body {
 }
 
 .maincol {
-    flex: 1;
     padding: 0 20px;
     display: flex;
     flex-direction: column;
@@ -312,18 +318,16 @@ body{
 
 /* CSS PRODUCT */
 
-.maincol{
-  flex:1;
+.colProduct{
   display:flex;
   flex-direction:column;
-  gap:24px;
+  margin-left: 10px;
+  width: 80%;
 }
-
 
 .infoAuriculares{
   display:flex;
   align-items:flex-start;
-  gap:20px;
   border:3px solid black;
   padding:16px;
   border-radius: 8px;
@@ -341,13 +345,13 @@ body{
 
 .detalles{ 
   max-width:600px; 
-  margin-left:0; 
+  margin-left: 15px; 
 }
 
 
 .opiniones{ 
-  display:block; 
-  margin-top:0; 
+  display:block;
+  margin-top:0;
 }
 
 .reviews{
