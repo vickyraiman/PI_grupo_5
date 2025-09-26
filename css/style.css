@@ -227,11 +227,6 @@ body{
   height: 360px;
 }
 
-form div{
-  margin-bottom: 15px;
-  text-align: left;
-}
-
 label{
   display: block;
   margin-bottom: 5px;
@@ -241,10 +236,10 @@ label{
 input{
   display: block;
   width: 70%;
+  margin: 10px auto;
   padding: 6px 10px;
   border: 1px solid grey;
   box-sizing: border-box;
-  margin: 10px auto;
   border-radius: 5px;
   font-family: Verdana, Tahoma, sans-serif;
 }
@@ -306,20 +301,26 @@ body{
   border: 1px solid black;
   text-align: center;
   border-radius: 5px;
-}
 
+}
+.formulario{
+  display: flex;
+  flex-direction: row;
+
+}
 .terminos-container {
   text-align: center;  
   margin: 10px auto;
   font-size: 14px;
+  display: flex;
 }
 
-.terminos-container input[type="checkbox"] {
-  margin-right: 5px;   
+.terminos-container input[type="checkbox"] { 
   vertical-align: middle; 
+  width: 20%;
+  margin: 0;
 }
 
-/* COMENTARIO TINI - PREGUNTARLE A BRIAN */
 
 /* CSS PRODUCT */
 
@@ -399,92 +400,6 @@ footer{
 /* okey dejeme cookear // okey al aprecer funciona pero fijense x las dudas! - tini */
 
 /* RESPONSIVE */
-
-/* TABLET (768px) */
-@media (max-width: 768px) {
-
-  /* Header general */
-  .header1, .headerLog, .headerReg {
-    flex-direction: column; /* Ponemos los elementos uno arriba de otro */
-    align-items: flex-start;
-    padding: 10px 15px;
-  }
-
-  .menu {
-    flex-direction: column; /* menu vertical */
-    margin-left: 0;
-  }
-
-  .actions {
-    width: 100%; 
-    margin-top: 10px;
-  }
-
-  .busqueda input {
-    width: 180px; /* 250px - (250 * 0.28) = 180px */
-  }
-
-  /* Sidebar + Contenido */
-  .sidebar {
-    flex-direction: column;
-  }
-
-  .sidebar aside {
-    width: 100%; /* ocupa todo el ancho disponible */
-    margin-bottom: 15px;
-  }
-
-  .contenido {
-    width: 100%;
-    padding: 0;
-  }
-
-  /* Cards */
-  .cards .art {
-    width: 48%; /* 2 por fila, 19% --> 48% para adaptarse */
-    margin-bottom: 15px;
-  }
-
-  .cards .art img {
-    height: auto; /* mantiene proporcion */
-  }
-
-  /* Producto */
-  .infoAuriculares {
-    flex-direction: column; /* imagen arriba, texto abajo */
-    align-items: center;
-    text-align: center;
-  }
-
-  .infoAuriculares img {
-    max-width: 80%; /* achicamos imagen para tablet */
-  }
-
-  .detalles {
-    margin-top: 15px;
-    max-width: 100%;
-  }
-
-  /* Formularios (login / register) */
-  .contenedor, .contenedor2 {
-    width: 80%; /* de 350px --> 80% del ancho de pantalla */
-    margin: 50px auto;
-  }
-
-  input {
-    width: 90%; /* ajustamos input al contenedor */
-  }
-
-  button {
-    width: 60%; /* boton mas grande para tablet */
-  }
-
-  /* Footer */
-  footer {
-    font-size: 14px;
-    padding: 15px;
-  }
-}
 
 /* CELULAR (420px) */
 @media (max-width: 420px) {
@@ -596,5 +511,5 @@ footer{
   }
 }
 
-/* COmentario */
+
 

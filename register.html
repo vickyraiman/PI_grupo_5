@@ -9,19 +9,65 @@
 </head>
 
 <body>
-    <header class="headerReg">
-        <div class="logo-container2">
-            <a href="./index.html" class="logo"><img src="./img/Component 1.png" alt="ShopNow Logo"></a>
-            <a href="./index.html" class="home-text">Home</a>
+    <header class="header1">
+        <a href="./index.html" class="logo"><img src="./img/Component 1.png" alt="ShopNow Logo"></a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./register.html">Register</a></li>
+            </ul>
+        </nav>
+        <div class="actions">
+            <form class="busqueda" action="./busqueda.html" method="get" name="busqueda">
+                <input type="text" placeholder="Buscar productos...">
+                <button class="enviar" type="submit">Buscar</button>
+            </form>
+            <a href="#" class="carrito"><img src="./img/carrito.png"></a>
         </div>
     </header>
+    <hr>
+    <main>
+        <aside class="sidebar">
+            <section>
+                <h3 class="tituloCat">Categorias</h3>
+                <nav class="categorias">
+                    <ul class="listaCostado">
+                        <li><a href="./categoriaBeauty.html">Beauty</a></li>
+                        <li><a href="./categoriaBeauty.html">Fragances</a></li>                       
+                        <li><a href="./categoriaBeauty.html">Furniture</a></li>                      
+                        <li><a href="./categoriaBeauty.html">Groceries</a></li>
+                        <li><a href="./categoriaBeauty.html">Home Decoration</a></li>
+                        <li><a href="./categoriaBeauty.html">Kitchen Accesories</a></li>
+                        <li><a href="./categoriaBeauty.html">Laptops</a></li>
+                        <li><a href="./categoriaBeauty.html">Men's Shirts</a></li>
+                        <li><a href="./categoriaBeauty.html">Men's Shoes</a></li>
+                        <li><a href="./categoriaBeauty.html">Men's Watches</a></li>
+                        <li><a href="./categoriaBeauty.html">Mobile Accesories</a></li>
+                        <li><a href="./categoriaBeauty.html">Motorcycle</a></li>
+                        <li><a href="./categoriaBeauty.html">Skin Care</a></li>
+                        <li><a href="./categoriaBeauty.html">Smartphones</a></li>
+                        <li><a href="./categoriaBeauty.html">Sports Accesories</a></li>
+                        <li><a href="./categoriaBeauty.html">Sunglasses</a></li>
+                        <li><a href="./categoriaBeauty.html">Tablets</a></li>
+                        <li><a href="./categoriaBeauty.html">Tops</a></li>
+                        <li><a href="./categoriaBeauty.html">Vehicles</a></li>
+                        <li><a href="./categoriaBeauty.html">Women's Bags</a></li>
+                        <li><a href="./categoriaBeauty.html">Women"s Dresses</a></li>
+                        <li><a href="./categoriaBeauty.html">Women's Jewellery</a></li>
+                        <li><a href="./categoriaBeauty.html">Women's Shoes</a></li>
+                        <li><a href="./categoriaBeauty.html">Women's Watches</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
 
-    <main class="contenedor2">
-        <form action="index.html" method="get">
+        <form action="login.html" method="get">
             <h2>Registrate</h2>
             <div>
                 <label for="username">Ingrese su mail:</label>
-                <input type="text" id="username" name="username" placeholder="Ingrese su mail">
+                <input type="email" id="username" name="email" placeholder="Ingrese su mail">
             </div>
             <div>
                 <label for="password">Ingrese su contraseña:</label>
