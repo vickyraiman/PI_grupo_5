@@ -21,15 +21,15 @@
         </nav>
         <div class="actions">
             <form class="busqueda" action="./busqueda.html" method="get" name="busqueda">
-                <input type="text" placeholder="Buscar productos...">
+               <input type="text" name="search" placeholder="Buscar productos...">
                 <button class="enviar" type="submit">Buscar</button>
             </form>
             <a href="#" class="carrito"><img src="./img/carrito.png"></a>
         </div>
     </header>
     <hr>
-    <main>
-        <aside class="sidebar">
+    <main class="todo">
+        <aside class="sidebarRl">
             <section>
                 <h3 class="tituloCat">Categorias</h3>
                 <nav class="categorias">
@@ -63,7 +63,7 @@
             </section>
         </aside>
 
-        <form action="login.html" method="get">
+        <form class="contenedor2" action="login.html" method="get">
             <h2>Registrate</h2>
             <div>
                 <label for="username">Ingrese su mail:</label>
@@ -74,8 +74,8 @@
                 <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
             </div>
             <div>
-                <label for="password">Repita su contraseña:</label>
-                <input type="password" id="password" name="password" placeholder="Ingrese su contraseña">
+                <label for="password2">Repita su contraseña:</label>
+                <input type="password" id="password2" name="password" placeholder="Ingrese su contraseña">
             </div>
 
             <div class="terminos-container">
