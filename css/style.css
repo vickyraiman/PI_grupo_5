@@ -96,6 +96,29 @@ body {
     padding: 0 20px;
 }
 
+.cards2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards2 .art {
+    width: 19%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.cards2 .art img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -129,8 +152,6 @@ body {
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-   
-    
 }
 
 .vermas{
@@ -193,19 +214,6 @@ body{
   font-family: Verdana, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.headerLog{
-  background-color: #C1E1FF;
-  border-bottom: 1px solid black;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-.logo-container{
-  display: flex;
-  align-items: center;
 }
 
 .logo{
@@ -279,20 +287,6 @@ body{
   font-family: Verdana, Tahoma, sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.headerReg{
-  background-color: #C1E1FF;
-  border-bottom: 1px solid black;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-}
-
-
-.logo-container2{
-  display: flex;
-  align-items: center;
 }
 
 .logo{
@@ -384,7 +378,6 @@ body{
 .reviews h3{
   color: goldenrod;
 }
-
 
 /* CSS FOOTER */
 footer{
