@@ -45,18 +45,12 @@ window.addEventListener('load', function () {
     let params = new URLSearchParams(queryString);
     let categoryName = params.get('category'); 
 
-    if (!categoryName) {
-        console.log("No hay categoría en la URL");
-        return;
-    }
+
 
     let tituloCategoria = document.querySelector('.tituloProdAl');
     let cardsContainer = document.querySelector('.cards');
 
-    if (!tituloCategoria || !cardsContainer) {
-        console.log("No se encontró .tituloProdAl o .cards");
-        return;
-    }
+
 
     tituloCategoria.innerText = categoryName;
 

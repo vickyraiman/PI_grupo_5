@@ -16,17 +16,8 @@ if (username) {
             }
 
             if (texto === "Register") {
-                items[i].style.display = 'none'
+                items[i].style.display ='none'
             }
         }
-    }
-
-
-    let logout = document.querySelector('#logout')
-
-    if (logout) {
-        logout.addEventListener('click', function() {
-            localStorage.removeItem("username")
-        })
     }
 }
