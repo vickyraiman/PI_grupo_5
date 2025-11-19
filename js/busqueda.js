@@ -49,7 +49,32 @@ fetch('https://dummyjson.com/products/search?q=' + searchVal)
     })
     .then(function(data){
         console.log(data)
-// aca falta 
+        let productos = data.products
+        let contenido = ""
+
+        if (productos.length === 0) {
+            tituloBusqueda.innerText = "No hay resultados para: " + searchVal
+            cardsCont.innerHTML = ""
+        }
+
+        for (let i = 0; i < productos.length; i++) {
+                let p = productos[i]
+    
+                contenido += `
+                    <article class="art">
+                        <img class="imgart" src="${p.thumbnail}" alt="${p.title}">
+                        <h4>${p.title}</h4>
+                        <p>${p.description}</p>
+                        <p>$${p.price}</p>
+                        <button class="vermas">
+                        <a href="./product.html?id=${productos[i].id}" target="_blank">Ver Más</a>
+                        </button>
+                    </article>
+                `
+            }
+        
+
+        cardsCont.innerHTML = contenido
     })
     .catch(function(err){
         console.log("Error: " + err)
