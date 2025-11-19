@@ -391,7 +391,6 @@ footer{
 .sideBar{
   width: 220px;
   padding: 15px;
-  border-right: 2px solid #9ec0de;
   background: #C1E1FF;
   list-style: none;
   align-items: flex-start;

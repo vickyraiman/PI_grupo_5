@@ -57,8 +57,8 @@ fetch('https://dummyjson.com/products')
         console.log("Error: " + err );
     })
 
+// CATEGORIAS
 let categorias = document.querySelector('.listaCostado')
-
 fetch('https://dummyjson.com/products/category-list')
     .then(function(res){
     return res.json()
