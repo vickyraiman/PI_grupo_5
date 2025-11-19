@@ -33,7 +33,9 @@ fetch('https://dummyjson.com/products')
                         <h2>${productos[i].title}</h2>
                         <p>${productos[i].description}</p>
                         <p>$${productos[i].price}</p>
-                        <button class="vermas"><a href="./product.html" target="_blank">Ver Más</a></button>
+                        <button class="vermas">
+                        <a href="./product.html?id=${productos[i].id}" target="_blank">Ver Más</a>
+                        </button>
                     </article>`
         }
 
@@ -45,7 +47,9 @@ fetch('https://dummyjson.com/products')
                         <h2>${productos[i].title}</h2>
                         <p>${productos[i].description}</p>
                         <p>$${productos[i].price}</p>
-                        <button class="vermas"><a href="./product.html" target="_blank">Ver Más</a></button>
+                        <button class="vermas">
+                        <a href="./product.html?id=${productos[i].id}" target="_blank">Ver Más</a>
+                        </button>
                     </article>`
         }
     })

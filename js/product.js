@@ -36,26 +36,43 @@ fetch('https://dummyjson.com/products/category-list')
 
 // PRODUCT
 let contenedor = document.querySelector(".infoAuriculares");
+let contenedorReviews = document.querySelector(".opiniones")
+let queryString = location.search;              
+let params = new URLSearchParams(queryString);  
+let id = params.get('id');
 
-fetch("'https://dummyjson.com/products/'")
-    .then(function (response) {
-    return res.json()
+fetch("https://dummyjson.com/products/" + id)
+    .then(function(res) {
+        return res.json();
     })
     .then(function(data) {
-    contenedor.innerHTML = `
-                <img src="${data.images}" alt="${data.titles}">
+        contenedor.innerHTML =
+            `<img src= "${data.images[0]}" alt= "${data.titles}"}>
+            <div class="detalles">
+                <h2>Nombre del Producto: ${data.title} </h2>
+                <h3>Marca: ${data.brand} </h3>
+                <h3>Descripcion: ${data.description} </h3>
+                <h3>Precio: $${data.price} </h3>
+                <h3>Categoría: ${data.category} </h3>
+                <h3>Stock: ${data.stock} </h3>
+                <h3>Tags: ${data.tags} </h3>
+            </div>`;
 
-                <div class="detalles">
-                    <h2>Nombre del Producto: ${data.title}</h2>
-                    <h3>Marca: ${data.brand}</h3>
-                    <h3>Descripcion: ${data.description}</h3>
-                    <h3>Precio: ${data.prince}</h3>
-                    <h3>Categoria: ${data.category}</h3>
-                    <h3>Stock: ${data.stock}</h3>
-                    <h3>Tags: ${data.tags}</h3>
-                </div>`
+            let reviews = data.reviews;
+            let htmlReviews = "<h2>Reseñas</h2>"
+
+            for (let i = 0; i < reviews.length; i++) {
+                let review = reviews[i];
+                htmlReviews += `
+                    <article class= "reviews"
+                    <h3> Rating: ${review.rating}/5</h3>
+                    <p>${review.comment}</p>
+                    <p>Fecha: ${review.date}</p>
+                    <p>Usuario: ${review.reviewerName}</p>
+                    </article>`;
+            }
+            contenedorReviews.innerHTML = htmlReviews
     })
     .catch(function(err){
         console.log("Error: " + err);
-        
-    })
+    });
