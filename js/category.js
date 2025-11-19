@@ -7,7 +7,7 @@ formularioBusqueda.addEventListener('submit', function (e) {
     let valor = inputBusqueda.value
     if (valor == "") {
         alert("El campo de busqueda no puede estar vacío.")
-    } else if (valor.length <= 3) {
+    } else if (valor.length < 3) {
         alert("La busqueda debe tener al menos 3 caracteres.")
     } else {
         this.submit()
