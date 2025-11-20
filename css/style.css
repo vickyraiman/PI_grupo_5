@@ -334,8 +334,7 @@ body{
 .colProduct{
   display:flex;
   flex-direction:column;
-  margin-left: 10px;
-  width: 80%;
+  width: 100%;
 }
 
 .infoAuriculares{
@@ -502,6 +501,22 @@ footer{
     height: auto;
   }
 
+  .cards2 {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .cards2 .art{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cards2 .art img{
+    width: 100%;
+    height: auto;
+  }
+
   /* Producto */
   .infoAuriculares {
     flex-direction: column;
@@ -530,6 +545,7 @@ footer{
   .sideBar{
     width: 100%;
   }
+
 /* ASIDE REGISTER Y LOGIN */
 
 .sidebarRl{

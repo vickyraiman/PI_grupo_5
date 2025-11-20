@@ -57,7 +57,7 @@ window.addEventListener('load', function () {
 
     let url = 'https://dummyjson.com/products/category/' + categoryName;
 
-    cardsContainer.innerHTML = "<p>Cargando productos...</p>";
+
 
     fetch(url)
         .then(function (respuesta) {
@@ -86,8 +86,7 @@ window.addEventListener('load', function () {
             cardsContainer.innerHTML = contenido;
         })
         .catch(function (error) {
-            cardsContainer.innerHTML = "<p>Error al cargar productos.</p>";
-            console.log("Error: ", error);
+            console.log("Error: " + error);
         });
 
 });
