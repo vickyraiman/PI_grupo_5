@@ -42,8 +42,8 @@ fetch('https://dummyjson.com/products/category-list')
 window.addEventListener('load', function () {
 
     let queryString = location.search;
-    let params = new URLSearchParams(queryString);
-    let categoryName = params.get('category'); 
+    let categoria = new URLSearchParams(queryString);
+    let categoryName = categoria.get('category'); 
 
 
 

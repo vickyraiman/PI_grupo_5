@@ -33,26 +33,40 @@ fetch('https://dummyjson.com/products/category-list')
     })
 
 //REGISTER
-let formulario = document.querySelector(".contenedor2")
+let formulario = document.querySelector(".contenedor2");
 
 formulario.addEventListener('submit', function(e) {
-    e.preventDefault()
-    let username = document.querySelector('#username').value
-    let password = document.querySelector('#password').value
-    let password2 = document.querySelector('#password2').value
-    let terminos = document.querySelector('#terminos').value
+    e.preventDefault(); 
 
-    if (username == ""){
-        alert("El email no puede estar vacio.")
-    }else if(password == ""){
-        alert("La contraseña no puede estar vacia")
-    }else if(password.length < 6){
-        alert("La contraseña debe tener al menos 6 caracteres")
-    }else if (password != password2){
-        alert("Las contraseñas no coinciden")
-    }else{
-        this.submit()
+    let username = document.querySelector('#username').value;
+    let password = document.querySelector('#password').value;
+    let password2 = document.querySelector('#password2').value;
+    let terminos = document.querySelector('#terminos');
+
+    let usernameError = document.querySelector('#username-error');
+    let passwordError = document.querySelector('#password-error');
+    let password2Error = document.querySelector('#password2-error');
+
+    usernameError.innerHTML = '';
+    passwordError.innerHTML = '';
+    password2Error.innerHTML = '';
+
+    if (username === "") {
+        usernameError.innerHTML = "Este campo no puede estar vacío";
+        usernameError.style.color = "red";
+    } else if (password === "") {
+        passwordError.innerHTML = "Este campo no puede estar vacío";
+        passwordError.style.color = "red";
+    } else if (password.length < 6) {
+        passwordError.innerHTML = "La contraseña debe tener al menos 6 caracteres";
+        passwordError.style.color = "red";
+    } else if (password !== password2) {
+        password2Error.innerHTML = "Las contraseñas no coinciden";
+        password2Error.style.color = "red";
+    } else if (!terminos.checked) {
+        alert("Se deben aceptar los términos y condiciones");
+    } else {
+        formulario.submit();
     }
+});
 
-
-}) 

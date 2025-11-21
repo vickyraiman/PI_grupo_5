@@ -36,17 +36,27 @@ fetch('https://dummyjson.com/products/category-list')
 
 let formulario = document.querySelector('.contenedor2')
 
+
 formulario.addEventListener('submit', function(e) {
     e.preventDefault()
     let username = document.querySelector('#username').value
     let password = document.querySelector('#password').value
 
+    let usernameError = document.querySelector('.username-error');
+    let passwordError = document.querySelector('.password-error');
+
+    usernameError.innerHTML = '';
+    passwordError.innerHTML = '';
+
     if(username === ""){
-        alert("El nombre no puede estar vacío")
+        usernameError.innerText = "Este campo no puede estar vacio";     
+        usernameError.style.color = "red"
     }else if(password == ""){
-        alert("La contraseña no puede estar vacia")
+        passwordError.innerText = "Este campo no puede estar vacio";
+        passwordError.style.color = "red"
     }else if(password.length < 6){
-        alert("La contraseña debe tener al menos 6 caracteres")
+        passwordError.innerText = "Este campo no puede estar vacio";
+        passwordError.style.color = "red"
     }else{
         localStorage.setItem("username", username)
         formulario.submit();

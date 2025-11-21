@@ -14,7 +14,7 @@ if(logout){
                 items[i].innerHTML = `<a href="./login.html">Login</a>`
             }
 
-            if (items[i.innerText === "Register"]) {
+            if (items[i].innerText === "Register") {
                 items[i].style.display = 'block';
             }
         }

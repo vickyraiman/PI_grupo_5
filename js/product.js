@@ -38,8 +38,8 @@ fetch('https://dummyjson.com/products/category-list')
 let contenedor = document.querySelector(".infoAuriculares");
 let contenedorReviews = document.querySelector(".opiniones")
 let queryString = location.search;              
-let params = new URLSearchParams(queryString);  
-let id = params.get('id');
+let productName = new URLSearchParams(queryString);  
+let id = productName.get('id');
 
 fetch("https://dummyjson.com/products/" + id)
     .then(function(res) {
